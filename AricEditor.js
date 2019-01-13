@@ -5,8 +5,8 @@
  **************************************************************************************/
 
 // pre-dependencies
-import $ from 'jquery';
-import _ from 'lodash';
+var $ = require('jquery');
+var _ = require('lodash');
 import './AricEditor.css';
 var count = 0;
 
