@@ -7,7 +7,7 @@
 // pre-dependencies
 var $ = require('jquery');
 var _ = require('lodash');
-import './AricEditor.css';
+require('./AricEditor.css');
 var count = 0;
 
 // Editor initialization function. Invoke at the time of object creation.
@@ -150,7 +150,7 @@ function EditorInit() {
 var initialize = _.once(EditorInit);
 
 // __constractor of AricEditor @param: dom id
-export function AricEditor(id)
+module.exports = function AricEditor(id)
 {
     this.id = '#'+id;
     $(this.id).append('<div class="btn-group">\n' +
