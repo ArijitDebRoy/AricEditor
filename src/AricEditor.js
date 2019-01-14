@@ -6,7 +6,7 @@
 
 // pre-dependencies
 var $ = require('jquery');
-var _ = require('lodash');
+var lodash = require('lodash');
 require('./AricEditor.css');
 var count = 0;
 
@@ -147,10 +147,10 @@ function EditorInit() {
 }
 
 // Validate at the time of multiple object creation init function invoke only once.
-var initialize = _.once(EditorInit);
+var initialize = lodash.once(EditorInit);
 
 // __constractor of AricEditor @param: dom id
-module.exports = function AricEditor(id)
+function AricEditor(id)
 {
     this.id = '#'+id;
     $(this.id).append('<div class="btn-group">\n' +
@@ -273,4 +273,8 @@ function chkUndoBtn(res) {
         $(selector).children('.btn-group').children('.Undo').prop('disabled', false);
     }
 }
+
+module.exports = {
+    AricEditor: AricEditor,
+};
 
