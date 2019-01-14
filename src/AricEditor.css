@@ -1,3 +1,4 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	    .aric-editor {
             border: 2px solid darkgray;
             width: auto;
@@ -34,8 +35,7 @@
             color: white;
             padding: 3px 10px 3px 10px;
         }
-        .btn-group {
-            /*display: flex;*/
+        .editor-btn-group {
             width: 100%;
             background-color: #efefef;
             border: 1px solid black;
