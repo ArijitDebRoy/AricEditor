@@ -5,7 +5,10 @@ module.exports = {
     entry: './src/AricEditor.js',
     output: {
         filename: 'AricEditor.min.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        sourceMapFilename: "AricEditor.map",
+        libraryTarget: 'var',
+        library: 'ui'
     },
     module: {
         rules: [

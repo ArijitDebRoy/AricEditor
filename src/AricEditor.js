@@ -87,7 +87,7 @@ function EditorInit() {
             document.execCommand('undo');
             count = 0;
             var selector = '#' + $(this).parent().parent().attr('id');
-            $(selector).children('.btn-group').children('.Undo').prop('disabled', true);
+            $(selector).children('.editor-btn-group').children('.Undo').prop('disabled', true);
         }
     });
 
@@ -153,7 +153,7 @@ var initialize = lodash.once(EditorInit);
 function AricEditor(id)
 {
     this.id = '#'+id;
-    $(this.id).append('<div class="btn-group">\n' +
+    $(this.id).append('<div class="editor-btn-group">\n' +
         '    <button class="editor-btn Bold" style="margin-left: 0.5vw" type="button" title="Bold"><b>B</b></button>\n' +
         '    <button class="editor-btn Italic" type="button" title="Italic"><i>I</i></button>\n' +
         '    <button class="editor-btn Underline" type="button" title="Underline"><u>U</u></button>\n' +
@@ -267,10 +267,10 @@ function insertTextAtCursor(text) {
 function chkUndoBtn(res) {
     var selector = '#' + $(res).parent().parent().attr('id');
     if(count == 0){
-        $(selector).children('.btn-group').children('.Undo').prop('disabled', true);
+        $(selector).children('.editor-btn-group').children('.Undo').prop('disabled', true);
     }
     else {
-        $(selector).children('.btn-group').children('.Undo').prop('disabled', false);
+        $(selector).children('.editor-btn-group').children('.Undo').prop('disabled', false);
     }
 }
 
