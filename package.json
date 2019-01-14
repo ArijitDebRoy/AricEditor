@@ -1,6 +1,6 @@
 {
   "name": "aric-editor",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "a minimal text editor",
   "main": "dist/AricEditor.min.js",
   "scripts": {
