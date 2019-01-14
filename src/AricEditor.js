@@ -7,7 +7,6 @@
 // pre-dependencies
 var $ = require('jquery');
 var lodash = require('lodash');
-require('./AricEditor.css');
 var count = 0;
 
 // Editor initialization function. Invoke at the time of object creation.

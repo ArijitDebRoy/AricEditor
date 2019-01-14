@@ -1,15 +1,16 @@
 {
   "name": "aric-editor",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "a minimal text editor",
-  "main": "dist/AricEditor.min.js",
+  "main": "src/AricEditor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [
     "editor",
-    "text"
+    "text",
+    "react"
   ],
   "author": "Arijit Deb Roy <arijitdebroy24@gmail.com>",
   "license": "ISC",
