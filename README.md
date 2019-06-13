@@ -1,32 +1,37 @@
-<div align="center">
+<div>
   <h1>aric-editor</h1>
 </div>
 
 <img class="retina-badge" src="https://badge.fury.io/js/aric-editor.png">
 <br/><br/>
-This is a simple WYSIWYG editor for any front-end js freamwork like react.js. In case of simple HTML or PHP base project one can use the AricEditor.min.js and enjoy editing content.
+This is a simple WYSIWYG editor for any front-end js framework like react.js. In case of simple HTML or PHP base project one can use the AricEditor.min.js and enjoy editing content.
 
-Paste content from anywhere and edit them with this simple editor whithout and tensing of copying third party font and stylings.
+Paste content from anywhere and edit them with this simple editor whithout and tension of copying third party font and stylings.
 
 
-<h2 align="center">Install</h2>
+<h2>Install</h2>
 
 ```bash
 npm install --save aric-editor
 ```
 
-<h2 align="center">Usage</h2>
+<h2>CDN</h2>
 
-### Configuration
+```bash
+https://unpkg.com/aric-editor@2.1.8/dist/AricEditor.min.js
+```
 
-#### Minimal example
+<h2>Usage</h2>
+
+### Examples
+
+#### Using react.js
 
 **editor.js**
 
 ```js
 import React from 'react';
 import { AricEditor } from 'aric-editor';
-import 'aric-editor/src/AricEditor.css';
 
 class EditorComponent extends React.Component {
     constructor(props) {
@@ -51,7 +56,7 @@ class EditorComponent extends React.Component {
     }
     
     destroy = () => {
-        // Get editor content
+        // Destroy editor content
             this.state.editor.destroyInstance();
     }
     
@@ -62,19 +67,39 @@ class EditorComponent extends React.Component {
                 <tr>
                   <td align="center">
                     <div id="editor"></div>
-                    <button onclick={this.getter.bind(this)}>GET<button>
-                    <button onclick={this.destroy.bind(this)}>DESTROY<button>
+                    <button onclick={this.getter.bind(this)}>GET</button>
+                    <button onclick={this.destroy.bind(this)}>DESTROY</button>
                   </td>
                 </tr>
-              <tbody>
+              </tbody>
             </table>
         )
     }    
 }
 ```
+#### Using HTML
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="https://unpkg.com/aric-editor@2.1.8/dist/AricEditor.min.js"></script>
+    </head>
+    <body>
+        <div id="editor"></div>
+    </body>
+    <script>
+        var e1 = new ui.AricEditor('editor');
+        e1.getEditorInstance();
+        e1.setEditorInstance('Sample Text!!!');
+    </script>
+</html>
+```
 
 
-<h2 align="center">Maintainers</h2>
+<h2>Maintainer</h2>
 
 <table>
   <tbody>
