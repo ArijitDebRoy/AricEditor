@@ -171,7 +171,7 @@ function AricEditor(id)
         '    <button class="editor-btn Source"  type="button" title="Source Code"><b><&nbsp;></b></button>\n' +
         '    <button class="editor-btn Sync"  type="button" title="Sync Changes"><i class="fa fa-retweet"></i></button>\n' +
         '</div>\n' +
-        '<div class="aric-editor active" contenteditable="true"></div><div class="aric-editor-source inactive"></div>');
+        '<div class="aric-editor active" spellcheck="true" contenteditable="true"></div><div class="aric-editor-source inactive"></div>');
 
 
     var editor = $(this.id).children('.aric-editor[contenteditable]');
