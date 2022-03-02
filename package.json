@@ -1,6 +1,6 @@
 {
   "name": "aric-editor",
-  "version": "2.1.8",
+  "version": "2.2.0",
   "description": "A minimal text editor for all front-end frameworks.",
   "main": "dist/AricEditor.js",
   "scripts": {
