@@ -1,0 +1,56 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	    .aric-editor {
+            border: 2px solid darkgray;
+            width: auto;
+            height: 20rem;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-color: #fff;
+            padding: 0 0 0 5px;
+        }
+        .aric-editor-source {
+            border: 2px solid darkgray;
+            width: auto;
+            height: 20rem;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-color: #fff;
+            padding: 0 0 0 5px;
+        }
+        .editor-btn {
+            border: none;
+            margin: 10px 3px 10px 3px;
+            border-radius: 3px;
+            border: 1px solid #262B49;
+            color: #262B49;
+            padding: 3px 10px 3px 10px;
+            cursor: pointer;
+        }
+        .editor-btn-click {
+            border: none;
+            margin: 10px 3px 10px 3px;
+            border-radius: 3px;
+            background-color: #3c4a9b ;
+            color: white;
+            padding: 3px 10px 3px 10px;
+        }
+        .editor-btn-group {
+            width: 100%;
+            background-color: #efefef;
+            border: 1px solid black;
+        }
+        .active {
+            display: block;
+        }
+        .inactive {
+            display: none;
+        }
+        .highlight-backend {
+            background-color: #fcf81e;
+        }
+        button:disabled,
+        button[disabled]{
+            background-color: #cccccc;
+            color: #666666;
+            cursor: not-allowed;
+        }

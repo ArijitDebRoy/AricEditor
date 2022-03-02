@@ -1,4 +1,5 @@
 const path = require('path');
+const copy = require("copy-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -21,5 +22,11 @@ module.exports = {
                 loader: 'file-loader?name="[name]-[hash].[ext]"',
             }
         ]
-    }
+    },
+    plugins: [
+        new copy([
+            { from: "./src/AricEditor.js", to: "./" },
+            { from: "./src/AricEditor.css", to: "./" },
+        ]),
+    ],
 };
