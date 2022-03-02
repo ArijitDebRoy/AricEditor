@@ -1,7 +1,7 @@
 /*************************************************************************************
- * AricEditor v2.0.0
+ * AricEditor v2.2.0
  * A minimal rich text editor
- * Author: Arijit Deb Roy (2018 March)
+ * Author: Arijit Deb Roy (2021 March)
  **************************************************************************************/
 
 // pre-dependencies
